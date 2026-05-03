@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
             provider_triage: vitalsData
         };
 
-        fetch("http://127.0.0.1:8000/final-risk-assessment", {
+        fetch("https://triageassist-backend-ndb2.onrender.com/final-risk-assessment", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

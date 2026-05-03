@@ -32,7 +32,7 @@
 // };
 
 // //on submit send data to backend patientIntake and store in local storage + go to confirmation
-// fetch("http://127.0.0.1:8000/patientIntake", {
+// fetch("https://triageassist-backend-ndb2.onrender.com/patientIntake", {
 //   method: "POST",
 //   headers: { "Content-Type": "application/json" },
 //   body: JSON.stringify(data)
@@ -57,7 +57,7 @@ document.getElementById("patientForm").addEventListener("submit", function(event
 
     console.log("PATIENT INTAKE DATA:", data);
 
-    fetch("http://127.0.0.1:8000/patientIntake", {
+    fetch("https://triageassist-backend-ndb2.onrender.com/patientIntake", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
