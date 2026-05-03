@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Login</title>
+    <link rel="stylesheet" href="provider.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="card">
+            <h2>Provider Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="button-row">
+                    <div class="back-button">
+                        <button onclick="goHome()">Back Home</button>
+                    </div>
+                    
+                    <div class="submit-container">
+                    <button type="submit">Login</button>
+                    </div>
+
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+                </div>
+
+
+                </div>
+                
+            </div>
+
+                <p id="error-message" style="color: #B91C1C; margin-top: 10px; display: none;">
+                    Invalid credentials. Please try again.
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="provider.js"></script>
+
+    <script>
+                function goHome() {
+                    window.location.href = "index.html";
+                }
+    </script>
+
+</body>
+
+</html>

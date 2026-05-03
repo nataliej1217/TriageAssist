@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #F8FAFC;
+}
+
+.page {
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+
+
+
+.login-form {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.error-message {
+  color: #DC2626;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #1E40AF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1D4ED8;
+}

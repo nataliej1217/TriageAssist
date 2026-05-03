@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider View</title>
+    <link rel="stylesheet" href="providerDashboard.css">
+</head>
+
+<body>
+<div class="page">
+
+    <header class = "header">
+        <h1>Provider Dashboard</h1>
+        <button id="logoutButton" class="secondButton" onclick="logout()">Logout</button>
+    </header>
+
+    <main class ="dashboardGrid">
+
+        <!-- Vitals Side -->
+         <section class="vitalsSection">
+            <h2>Input Patient Vitals</h2>
+            <p> Search for Patient using their name, then enter clinical triage values.</p>
+
+            <form id="vitalsForm">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" placeholder="First Last" required>
+
+                <label for="patientID">Patient ID:</label>
+                <input type="text" id="patientID" name="patientID" placeholder="Enter Patient ID if Returning Patient">
+
+                <p id="patientError" class ="error-message"></p>
+                <p id="patientFound" class ="success-message"></p>
+
+
+                <label for="troponin">Troponin:</label>
+                <input type="number" id="elevatedTroponin" name="troponinValue" step="0.01" min="0"required>
+
+                 <label for="ECG">ECG:</label>
+                <select id="ecgAbnormalities" name="ECGResult" required>
+                    <option value="">Select</option>
+                    <option value="normal">Normal</option>
+                    <option value="abnormal">Abnormal</option>
+                </select>
+
+                <label for="heartRate">Heart Rate:</label>
+                <input type="number" id="heartRate" name="heartRate" min="0" required>
+  
+                <button type="submit" class="primaryButton">Submit Vitals</button>
+            </form>
+            </section>
+
+            <!-- Patient Queue -->
+             <section class="card">
+                <h2>Patient Risk Queue</h2>
+                <p>View patients waiting for triage and their risk score.</p>
+                <div id="successMessage" class="success-message"></div>
+
+                <div class="queueTable">
+                    <table class="queue-table">
+                        <thead>
+                            <tr>
+                                <th>Admit</th>
+                                <th>Patient Name</th>
+                                <th>Risk Score</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patientQueueBody">
+                            <tr>
+                                <td colspan="4">No Patients in Queue.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </section>
+    </main>
+    <div id="admitModal" class="modal hidden">
+  <div class="modal-content">
+    <h3>Confirm Admission</h3>
+    <p>Are you sure you want to admit this patient? This action cannot be undone.</p>
+
+    <div class="modal-buttons">
+      <button id="cancelAdmit" class="secondaryButton">Cancel</button>
+      <button id="confirmAdmit" class="primaryButton">Admit</button>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="providerDashboard.js"></script>
+    </body>
+</html>

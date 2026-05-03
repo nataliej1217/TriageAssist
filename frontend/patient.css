@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #F8FAFC;
+}
+
+.page {
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.submit-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background: #1E40AF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1D4ED8;
+}

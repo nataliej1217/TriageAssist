@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triage Assist -Welcome Screen</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="subtitle"> Welcome to </div>
+    <div class="title"> TriageAssist </div>
+        
+
+    <div class="button-group">
+        <button onclick="goToPatient()">Patient</button>
+        <button onclick="goToProvider()">Provider</button>
+        </div>
+    </div>
+
+    <script>
+        function goToPatient() {
+            window.location.href = "patient.html";
+        }
+        function goToProvider() {
+            window.location.href = "provider.html";
+        }
+    </script>
+</body>
+</html>
